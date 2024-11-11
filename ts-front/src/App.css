@@ -1,0 +1,369 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/*
+background-color: rgba(97, 186, 133, .1);
+background-color: aquamarine;
+*/
+
+.div-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--background2);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  gap: 2rem;
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+}
+
+li a {
+  color: var(--text-primary);
+  font-size: large;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: var(--text-hover);
+}
+
+.buttonCart {
+  width: 3.5rem;
+  height: 3rem;
+  position: relative;
+  border-radius: 50%;
+  color: var(--text-primary);
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.buttonCart:hover {
+  background-color: dodgerblue;
+}
+
+svg {
+  width: 1rem;
+  height: 1rem;
+  color: aliceblue;
+}
+
+.store-lo {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  background-color: var(--card-bg);
+  gap: 1rem;
+}
+
+.CardPrice {
+  font-weight: bolder;
+}
+/*
+.cartBody {
+  color: rgb(173, 230, 173);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+*/
+img {
+  width: 100%;
+  height: 14rem;
+  object-fit: fill;
+}
+
+.cartHeader {
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cartHeader h2 {
+  text-decoration: underline;
+}
+
+.cartTotal {
+  background-color: darkblue;
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+span {
+  font-weight: bolder;
+}
+
+.Card {
+  color: black;
+  background-color: var(--card);
+  outline: var(--card-outline);
+}
+
+.navQuantity {
+  position: absolute;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  margin-left: 1rem;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.5s;
+  background-color: var(--background);
+}
+
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  background-color: white;
+  transition: width 0.2s ease-in;
+  box-shadow: -10px 0 9px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.cart-sidebar.open {
+  width: 300px;
+}
+
+.cart-content {
+  height: 100%;
+  background-color: thistle;
+  overflow-y: auto;
+}
+
+.cart-body {
+  padding-top: 1rem;
+  background-color: lightblue;
+}
+
+.close-button {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  background-color: #111;
+}
+
+.close-button:hover {
+  background-color: #818181;
+}
+
+.storeCard {
+  color: #111;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.CardTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.addItem {
+  color: #111;
+  background-color: limegreen;
+  font-weight: bold;
+}
+
+.addItem:hover {
+  background-color: lime;
+}
+
+.removeItem {
+  background-color: crimson;
+  font-weight: bold;
+}
+
+.removeItem:hover {
+  background-color: red;
+}
+
+.QuantityLO {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.QuantityButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.decreaseQnt {
+  background-color: crimson;
+  font-weight: bolder;
+}
+
+.decreaseQnt:hover {
+  background-color: red;
+}
+
+.increaseQnt {
+  background-color: green;
+  font-weight: bolder;
+}
+
+.increaseQnt:hover {
+  background-color: lightgreen;
+  color: #111;
+}
+
+.container {
+  transition: opacity 0.3s ease-in-out;
+}
+.container.dimmed {
+  opacity: 0.3;
+}
+
+.div-con.dimmed {
+  opacity: 0.3;
+}
+
+.storePros {
+  border-bottom: solid black;
+}
+
+.container-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff8e8e;
+  transition: 0.4s;
+  border-radius: 30px;
+  outline: 1px solid var(--border);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: aliceblue;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #8e80ee;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+}
+
+option {
+  background-color: lightseagreen;
+}
+
+select {
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-image: none;
+  cursor: pointer;
+  font-size: large;
+  text-align: center;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+  background-color: deepskyblue;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: limegreen;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+
+.select:hover::after {
+  color: black;
+}
+
+.select-cont {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: large;
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Aloe",
+    "price": 10.99,
+    "imgUrl": "/img/aloe.jpg",
+    "category": "succlent"
+  },
+  {
+    "id": 2,
+    "name": "SharkSkin",
+    "price": 11.99,
+    "imgUrl": "/img/sharkskin.jpg",
+    "category": "succlent"
+  },
+  {
+    "id": 3,
+    "name": "Pancake",
+    "price": 10.0,
+    "imgUrl": "/img/pancake.jpg",
+    "category": "succlent"
+  },
+  {
+    "id": 4,
+    "name": "Agave",
+    "price": 14.0,
+    "imgUrl": "/img/agave.jpg",
+    "category": "succlent"
+  },
+  {
+    "id": 5,
+    "name": "Golden Cactus",
+    "price": 8.0,
+    "imgUrl": "/img/golden-cactus.jpg",
+    "category": "cactus"
+  },
+  {
+    "id": 6,
+    "name": "Yellow Bells",
+    "price": 14.0,
+    "imgUrl": "/img/yeloowbells.jpg",
+    "category": "shurbs"
+  },
+  {
+    "id": 7,
+    "name": "Boojum Tree",
+    "price": 35.0,
+    "imgUrl": "/img/boojun-tree.jpg",
+    "category": "tree"
+  },
+  {
+    "id": 8,
+    "name": "Bishop's Cap Cactus",
+    "price": 10.0,
+    "imgUrl": "/img/bishops-cap-cactus.jpg",
+    "category": "cactus"
+  },
+  {
+    "id": 9,
+    "name": "Desert Bluebells",
+    "price": 13.0,
+    "imgUrl": "/img/desert-bluebells.jpg",
+    "category": "shurbs"
+  },
+  {
+    "id": 10,
+    "name": "Desert Marigold",
+    "price": 3.0,
+    "imgUrl": "/img/desert-marigold.jpg",
+    "category": "flowers"
+  },
+  {
+    "id": 11,
+    "name": "Desert Maripoas Lily",
+    "price": 5.0,
+    "imgUrl": "/img/desert-mariposa-lily.jpg",
+    "category": "flowers"
+  },
+  {
+    "id": 12,
+    "name": "Desert Willow",
+    "price": 8.0,
+    "imgUrl": "/img/desert-willow.jpg",
+    "category": "shurbs"
+  },
+  {
+    "id": 13,
+    "name": "Ghost Plant",
+    "price": 11.0,
+    "imgUrl": "/img/ghost-plant.jpg",
+    "category": "flowers"
+  },
+  {
+    "id": 14,
+    "name": "Mojave Aster",
+    "price": 12.99,
+    "imgUrl": "/img/mojave-aster.jpg",
+    "category": "flowers"
+  },
+  {
+    "id": 15,
+    "name": "Organ Pipe Cactus",
+    "price": 22.99,
+    "imgUrl": "/img/organ-pipe-cactus.jpg",
+    "category": "cactus"
+  },
+  {
+    "id": 16,
+    "name": "Smoke Tree",
+    "price": 9.99,
+    "imgUrl": "/img/smooke-tree.jpg",
+    "category": "tree"
+  }
+]
